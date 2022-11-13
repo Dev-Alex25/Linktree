@@ -1,49 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Freckle+Face&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+:root {
+  --body-bg-color: #faf7fd;
+  --purple: #bb99dd;
+}
 
 * {
-   margin: 0;
-   padding: 0;
-   font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-body {
-   height: 100vh;
-   background: linear-gradient(120deg, #f7bc85d8, #f8f9fcda);
-   display: flex;
-   align-items: center;
-   justify-content: center;
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  height: 100px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(50deg, rgb(119, 0, 255), rgb(77, 81, 88));
 }
 
-.relogio {
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-   height: 200px;
-   width: 550px;
-   background: transparent;
-   border-radius: 3px;
-   box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.relogio div {
-   height: 170px;
-   width: 150px;
+.container .tree-container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.tree-container .avatar {
+  width: 213px;
+  height: 213px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #faf7fd;
+  border-radius: 50%;
+}
+
+.tree-container .avatar img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+.tree-container .instagram-user {
+   margin-top: 15px;
+   color: #faf7fd
+}
+.tree-container .links-container {
+   margin-top: 17px;
    display: flex;
    flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   color: #fff;
-   background: rgba(5, 5, 5, .9);
-   box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
-   border-radius: 7px;
-   letter-spacing: 3px;
 }
+.links-container .link{
+  color: #faf7fd;
+   margin-top: 16px;
+   width: 325px;
+   border: 2px solid rgb(129, 105, 105);
+   border-radius: 4px;
+   font-size: 16px;
+   font-weight: 600;
+   text-transform: uppercase;
+   text-align: center;
+   /*12px e 0 nas laterais*/
+   padding: 12px 0;
+   transition: ease 0.3s;
+}
+.links-container .link:hover{
+   background:rgb(64, 20, 194);
+   color:#814be6;
+   box-shadow: #792c2c;
+   
+}
+.tree-container .socials-container{
+  color: aqua;
+  margin-left: 100px;
+   margin-top: 68px;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   gap: 29px;
+   
+  
+   
+}
+.socials-container .social {
+   transform: scale(0.9);
+    
+   transition: ease 0.2s;
+ }
+ 
+ .socials-container .social:hover {
+   transform: scale(1);
 
-.relogio span {
-   font-weight: bolder;
-   font-size: 60px;
-}
-
-.relogio span.tempo {
-   font-size: 10px;
-}
+ }
+ 
+ 
